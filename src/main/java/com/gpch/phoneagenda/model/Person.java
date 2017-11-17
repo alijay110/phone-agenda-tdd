@@ -15,9 +15,7 @@ import com.fasterxml.jackson.annotation.ObjectIdGenerators;
 
 @Entity
 @Table(name = "person")
-@JsonIdentityInfo(
-		  generator = ObjectIdGenerators.PropertyGenerator.class, 
-		  property = "personId")
+@JsonIdentityInfo(generator = ObjectIdGenerators.PropertyGenerator.class, property = "personId")
 public class Person {
 	@Id
 	@GeneratedValue
@@ -27,9 +25,9 @@ public class Person {
 	private String name;
 	@Column(name = "last_name")
 	private String lastName;
-	@OneToMany(mappedBy="person", cascade = CascadeType.ALL, orphanRemoval = true)
+	@OneToMany(mappedBy = "person", cascade = CascadeType.ALL, orphanRemoval = true)
 	private Set<Phone> phones;
-	
+
 	public Person(long personId, String name, String lastName) {
 		super();
 		this.personId = personId;

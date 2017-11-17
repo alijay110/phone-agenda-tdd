@@ -13,9 +13,7 @@ import com.fasterxml.jackson.annotation.ObjectIdGenerators;
 
 @Entity
 @Table(name = "phone")
-@JsonIdentityInfo(
-		  generator = ObjectIdGenerators.PropertyGenerator.class, 
-		  property = "phoneId")
+@JsonIdentityInfo(generator = ObjectIdGenerators.PropertyGenerator.class, property = "phoneId")
 public class Phone {
 	@Id
 	@GeneratedValue
@@ -24,9 +22,9 @@ public class Phone {
 	@Column(name = "phone_number")
 	private String phoneNumber;
 	@ManyToOne
-    @JoinColumn(name="person_id", nullable = false)
+	@JoinColumn(name = "person_id", nullable = false)
 	private Person person;
-	
+
 	public Phone() {
 		super();
 	}
@@ -61,7 +59,5 @@ public class Phone {
 	public void setPerson(Person person) {
 		this.person = person;
 	}
-	
-	
 
 }
