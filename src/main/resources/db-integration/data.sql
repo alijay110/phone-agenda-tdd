@@ -1,0 +1,12 @@
+INSERT INTO person values (1, 'Jamesy', 'Centore');
+INSERT INTO person values (2, 'Nonah', 'Hazenberg');
+INSERT INTO person values (3, 'Tedie', 'Wightman');
+INSERT INTO person values (4, 'Harwell', 'Rydzynski');
+INSERT INTO person values (5, 'Gloria', 'Kounias');
+INSERT INTO person values (6, 'Renaud', 'Mentasti');
+INSERT INTO person values (7, 'Chrissie', 'Galluccio');
+INSERT INTO phone values (1, '2574000613', 1);
+INSERT INTO phone values (2, '2574000614', 2);
+INSERT INTO phone values (3, '2574000615', 3);
+INSERT INTO phone values (4, '2574000616', 4);
+INSERT INTO phone values (5, '2574000617', 5);
